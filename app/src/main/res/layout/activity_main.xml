@@ -58,7 +58,7 @@
         android:text="Jenis Kelamin" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/rg1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/ettl"
@@ -97,8 +97,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/tvtl"
-        android:layout_alignLeft="@+id/radioGroup"
-        android:layout_alignStart="@+id/radioGroup" />
+        android:layout_alignLeft="@+id/rg1"
+        android:layout_alignStart="@+id/rg1" />
 
     <TextView
         android:id="@+id/tvalamat"
@@ -115,8 +115,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/tvalamat"
-        android:layout_alignLeft="@+id/radioGroup"
-        android:layout_alignStart="@+id/radioGroup" />
+        android:layout_alignLeft="@+id/rg1"
+        android:layout_alignStart="@+id/rg1" />
 
     <TextView
         android:id="@+id/tvtel"
@@ -204,6 +204,13 @@
         android:layout_below="@+id/cbmaha"
         android:gravity="center"
         android:text="Daftar" />
+
+        <TextView
+            android:id="@+id/tvhasil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="New Text" />
 
 
     </LinearLayout>
