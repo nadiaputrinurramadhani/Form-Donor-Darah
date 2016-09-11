@@ -24,4 +24,178 @@
         android:layout_centerHorizontal="true"
         android:text="Isi Data Diri Untuk Mendaftar Donor Darah"
         android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/tvnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="37dp"
+        android:text="Nama Lengkap" />
+
+    <EditText
+        android:id="@+id/etnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvjk"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvjk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvnama"
+        android:layout_marginTop="19dp"
+        android:text="Jenis Kelamin" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvtl"
+        android:layout_alignLeft="@+id/etnama"
+        android:layout_alignStart="@+id/etnama"
+        android:layout_below="@+id/tvnama">
+
+        <RadioButton
+            android:id="@+id/rblaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Laki - laki" />
+
+        <RadioButton
+            android:id="@+id/rbpr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Perempuan" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Tahun Lahir" />
+
+    <EditText
+        android:id="@+id/ettl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvtl"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvalamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvtl"
+        android:layout_marginTop="23dp"
+        android:text="Alamat" />
+
+    <EditText
+        android:id="@+id/etalamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvalamat"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvtel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvalamat"
+        android:layout_marginTop="28dp"
+        android:text="No. Telepon" />
+
+    <TextView
+        android:id="@+id/tvgd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvtel"
+        android:layout_marginTop="23dp"
+        android:text="Golongan Darah" />
+
+    <Spinner
+        android:id="@+id/spinnergoldar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:entries="@array/goldar" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvtel"
+        android:layout_alignLeft="@+id/etalamat"
+        android:layout_alignStart="@+id/etalamat"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/tvstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnergoldar"
+        android:text="Status" />
+
+    <CheckBox
+        android:id="@+id/cbpel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvstatus"
+        android:checked="false"
+        android:text="Pelajar" />
+
+    <CheckBox
+        android:id="@+id/cbmaha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cbpel"
+        android:layout_centerHorizontal="true"
+        android:checked="false"
+        android:text="Mahasiswa" />
+
+    <CheckBox
+        android:id="@+id/cbpeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinnergoldar"
+        android:layout_alignRight="@+id/spinnergoldar"
+        android:layout_alignTop="@+id/cbmaha"
+        android:checked="false"
+        android:text="Pegawai" />
+
+    <Button
+        android:id="@+id/bDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cbmaha"
+        android:layout_alignRight="@+id/cbmaha"
+        android:layout_below="@+id/cbmaha"
+        android:text="Daftar" />
+
 </RelativeLayout>
