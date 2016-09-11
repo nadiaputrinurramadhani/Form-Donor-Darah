@@ -18,7 +18,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:src="@drawable/logo" />
 
     <TextView
@@ -28,7 +28,10 @@
         android:layout_below="@+id/imageView"
         android:gravity="center"
         android:text="Isi Data Diri Untuk Mendaftar Donor Darah"
-        android:textColor="@android:color/holo_red_dark" />
+        android:textColor="@android:color/holo_red_dark"
+        android:textIsSelectable="false"
+        android:textSize="17dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvnama"
@@ -38,7 +41,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tv1"
         android:layout_marginTop="37dp"
-        android:text="Nama Lengkap" />
+        android:text="Nama Lengkap"
+        android:textStyle="italic" />
 
     <EditText
         android:id="@+id/etnama"
@@ -55,7 +59,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tvnama"
         android:layout_marginTop="19dp"
-        android:text="Jenis Kelamin" />
+        android:text="Jenis Kelamin"
+        android:textStyle="italic" />
 
     <RadioGroup
         android:id="@+id/rg1"
@@ -90,7 +95,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:text="Tahun Lahir" />
+        android:text="Tahun Lahir"
+        android:textStyle="italic" />
 
         <EditText
             android:id="@+id/ettl"
@@ -107,7 +113,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tvtl"
         android:layout_marginTop="23dp"
-        android:text="Alamat" />
+            android:text="Alamat"
+            android:textStyle="italic" />
 
     <EditText
         android:id="@+id/etalamat"
@@ -125,7 +132,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tvalamat"
         android:layout_marginTop="28dp"
-        android:text="No. Telepon" />
+        android:text="No. Telepon"
+        android:textStyle="italic" />
 
         <EditText
             android:id="@+id/ettel"
@@ -145,7 +153,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tvtel"
         android:layout_marginTop="23dp"
-        android:text="Golongan Darah" />
+            android:text="Golongan Darah"
+            android:textStyle="italic" />
 
     <Spinner
         android:id="@+id/spinnergoldar"
@@ -163,7 +172,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/spinnergoldar"
-        android:text="Status" />
+            android:text="Status"
+            android:textStyle="italic" />
 
     <CheckBox
         android:id="@+id/cbpel"
@@ -194,7 +204,16 @@
         android:checked="false"
         android:text="Pegawai" />
 
-    <Button
+        <TextView
+            android:id="@+id/tvann"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Ayo! Bantu saudara kita yang membutuhkan dengan klik Daftar!"
+            android:textSize="18dp" />
+
+        <Button
         android:id="@+id/bDaftar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
