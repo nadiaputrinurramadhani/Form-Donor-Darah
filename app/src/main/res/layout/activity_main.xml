@@ -204,6 +204,6 @@
         android:layout_below="@+id/cbmaha"
         android:text="Daftar" />
 
-</ScrollView>
 
 </RelativeLayout>
+</ScrollView>
