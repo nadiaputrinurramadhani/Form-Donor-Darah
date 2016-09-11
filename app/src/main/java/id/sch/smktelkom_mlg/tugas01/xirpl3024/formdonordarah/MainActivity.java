@@ -51,7 +51,9 @@ public class MainActivity extends AppCompatActivity {
                 String nama = etnama.getText().toString();
                 int tahun = Integer.parseInt(ettl.getText().toString());
                 int usia = 2016 - tahun;
-                tvhasil.setText("Terima Kasih " + nama + "(" + usia + ")" + ", Anda telah berpartisipasi dalam donor darah" +
+                tvhasil.setText("Terima Kasih Atas Partisipasi Saudara" + "\n" +
+                        nama + "(" + usia + ")" + "\n" +
+                        "Anda telah berpartisipasi dalam donor darah" + "\n" +
                         " SEMOGA BERMANFAAT");
             }
         });
