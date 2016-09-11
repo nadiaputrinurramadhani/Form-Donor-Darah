@@ -92,15 +92,14 @@
         android:layout_centerVertical="true"
         android:text="Tahun Lahir" />
 
-    <EditText
-        android:id="@+id/ettl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tvtl"
-        android:layout_alignLeft="@+id/rg1"
-        android:layout_alignStart="@+id/rg1" />
+        <EditText
+            android:id="@+id/ettl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
 
-    <TextView
+        <TextView
         android:id="@+id/tvalamat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
